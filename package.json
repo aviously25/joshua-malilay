@@ -1,7 +1,6 @@
 {
   "name": "joshua-malilay",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +9,17 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.16.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aviously25/joshua-malilay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aviously25/joshua-malilay/issues"
+  },
+  "homepage": "https://github.com/aviously25/joshua-malilay#readme",
+  "description": ""
 }

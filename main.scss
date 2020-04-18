@@ -1,7 +1,7 @@
 $theme-colors:(
     "primary": #C4DCED,
     "secondary": #EFA8A0, 
-    "light": #F9EBE0,
+    "light": #f7f4eb,
     "dark": #2c324c,
 );
 
@@ -11,9 +11,26 @@ $border-radius:10px;
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 //custom css
+@font-face{
+    font-family: 'neoto-serif-italic';
+    src: url(src/fonts/neatoserif-italic-webfont.woff2) format('woff2'), 
+         url(src/fonts/neatoserif-italic-webfont.woff) format('woff'),
+         url(src/fonts/NeatoSerif-Italic.otf) format('otf');
+}
+
+html,body{
+    overflow: visible;
+}
+
+.logo-text{
+    font-family: 'neoto-serif-italic', 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
 
 .logo{
-    
+    position: fixed;
+    left: 20px;
+    top: 20px;
 }
 
 .nav-item{

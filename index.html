@@ -8,27 +8,31 @@
     <!--CSS and include files-->
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <script src="https://kit.fontawesome.com/8da4aa3358.js" crossorigin="anonymous"></script>
 
     <title>Joshua Malilay</title>
+
+    <!--Script-->
 </head>
 <!--Body-->
 <body class="bg-light">
-
     <!--Nav Bar-->
-    <nav class="navbar bg-light fixed-top">
-        <div class="nav" style="margin:auto auto">
-            <a class="nav-item mr-3 active nav-link text-dark" href="/" >HOME</a>
-            <a class="nav-item mr-3  nav-link text-dark" href="#music" >MUSIC</a>
-            <a class="nav-item mr-3  nav-link text-dark" href="#videos" >VIDEOS</a>
-            <a class="nav-item mr-3 nav-link text-dark" href="#contact" >CONTACT</a>
+    <nav class="navbar bg-light navbar-expand-lg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars float-right"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar" style="margin:auto auto">
+            <div class="navbar-nav mx-auto">
+                <a class="nav-item mr-3 nav-link text-dark active " href="#" >HOME</a>
+                <a class="nav-item mr-3 nav-link text-dark" href="#music" >MUSIC</a>
+                <a class="nav-item mr-3 nav-link text-dark" href="#videos" >VIDEOS</a>
+                <a class="nav-item mr-3 nav-link text-dark" href="#contact" >CONTACT</a>
+            </div>
         </div>
     </nav>
     <div class="fixed-top logo" style="max-width: 300px;">
         <a class="text-dark" href="index.html">
-            <img src="src/Joshua-Malilay-Logo.svg" style="height: 6rem;">
-            <span class="header-text">JOSH</span>
-            <span class="header-text">MALILAY</span>
+            <span class="logo-text">JOSH </span>
+            <span class="logo-text">MALILAY</span>
         </a>
     </div>
 
@@ -38,6 +42,15 @@
         <video autoplay muted class="video-bg rounded">
             <source src="src/oddsAndEnds.mp4" type="video/mp4">
         </video>
+    </div>
+
+    <!--Gif section-->
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <img src="src/strumming gif.GIF" data-aos="fade-in" class="img-fluid">
+            </div>
+        </div>
     </div>
 
     <!--Music Section-->
@@ -63,7 +76,7 @@
                             <img src="src/odds-and-ends-cover.jpg" class="img-fluid">
                         </div>
                         <div class="col">
-                            <img src="src/be-mine-pls-cover.jpg" class="img-fluid">
+                            <img src="src/warm-body-cover.jpg" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -76,13 +89,30 @@
     </div>
 
     <!--Videos section-->
-    <div id="videos" class="container">
+    <div id="videos" class="container mt-5">
         <div class="row">
             <div class="col text-center">
                 <h1 class="display-3"> VIDEOS </h1>
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7kLuS9RpZ7g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+        </div>
 
+    </div>
+
+    <!--Contact Section-->
+    <div id="contact" class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-3"> CONTACT </h1>
+            </div>
+        </div>
     </div>
     
     <!--Icons Links-->
@@ -102,8 +132,9 @@
         </div>
     </div>
     <!--Javascript includes-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8da4aa3358.js" crossorigin="anonymous"></script>
 </body>
 </html>
