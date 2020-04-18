@@ -72,7 +72,7 @@ span.line_wrap:hover span.line {
     width:100%;    
 }
 
-.active{
-    text-decoration: line-through;
+.active span{
+    text-decoration-line: line-through !important;
     font-weight: bold;
 }
