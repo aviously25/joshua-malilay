@@ -7776,9 +7776,6 @@ a.text-dark:hover, a.text-dark:focus {
 @font-face {
   font-family: 'neoto-serif-italic';
   src: url(src/fonts/neatoserif-italic-webfont.woff2) format("woff2"), url(src/fonts/neatoserif-italic-webfont.woff) format("woff"), url(src/fonts/NeatoSerif-Italic.otf) format("otf"); }
-html, body {
-  overflow: visible; }
-
 .logo-text {
   font-family: 'neoto-serif-italic', 'Times New Roman', Times, serif;
   font-size: 2rem; }
@@ -7806,6 +7803,26 @@ i {
   margin: auto 2rem; }
 
 .header-text {
-  font-family: Barlow, Arial, Helvetica, sans-serif; }
+  font-family: 'Barlow', Arial, Helvetica, sans-serif; }
+
+.line_wrap {
+  position: relative;
+  display: inline-block; }
+
+span.line {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 0;
+  border-top: 3px solid var(--dark);
+  -webkit-transition: width 0.5s ease-in; }
+
+span.line_wrap:hover span.line {
+  width: 100%; }
+
+.active {
+  text-decoration: line-through;
+  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

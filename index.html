@@ -8,28 +8,45 @@
     <!--CSS and include files-->
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="animate.css">
 
     <title>Joshua Malilay</title>
 
     <!--Script-->
 </head>
 <!--Body-->
-<body class="bg-light">
+<body class="bg-light" data-spy="scroll" data-target=".navbar" data-offset="60">
     <!--Nav Bar-->
-    <nav class="navbar bg-light navbar-expand-lg fixed-top">
+    <nav class="navbar bg-light navbar-expand-lg fixed-top animated slideInDown">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars float-right"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbar" style="margin:auto auto">
             <div class="navbar-nav mx-auto">
-                <a class="nav-item mr-3 nav-link text-dark active " href="#" >HOME</a>
-                <a class="nav-item mr-3 nav-link text-dark" href="#music" >MUSIC</a>
-                <a class="nav-item mr-3 nav-link text-dark" href="#videos" >VIDEOS</a>
-                <a class="nav-item mr-3 nav-link text-dark" href="#contact" >CONTACT</a>
+                <a class="nav-item mr-3 nav-link active text-dark" href="#home">
+                    <span class="line_wrap">
+                        <span class="line"></span>HOME
+                    </span>
+                </a>
+                <a class="nav-item mr-3 nav-link text-dark" href="#music">
+                    <span class="line_wrap">
+                        <span class="line"></span>MUSIC
+                    </span>
+                </a>
+                <a class="nav-item mr-3 nav-link text-dark" href="#videos">
+                    <span class="line_wrap">
+                        <span class="line"></span>VIDEOS
+                    </span>
+                </a>
+                <a class="nav-item mr-3 nav-link text-dark" href="#contact">
+                    <span class="line_wrap">
+                        <span class="line"></span>CONTACT
+                    </span>
+                </a>
             </div>
         </div>
     </nav>
-    <div class="fixed-top logo" style="max-width: 300px;">
+    <div class="fixed-top logo animated slideInDown" style="max-width: 300px;">
         <a class="text-dark" href="index.html">
             <span class="logo-text">JOSH </span>
             <span class="logo-text">MALILAY</span>
@@ -37,7 +54,7 @@
     </div>
 
     <!--BG Video-->
-    <div class="container-fluid vh-100" style="max-width: 80%;">
+    <div id="home" class="container-fluid vh-100 scrollspy" style="max-width: 80%;">
         <div style="height: 10%;"></div>
         <video autoplay muted class="video-bg rounded">
             <source src="src/oddsAndEnds.mp4" type="video/mp4">
@@ -48,13 +65,13 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <img src="src/strumming gif.GIF" data-aos="fade-in" class="img-fluid">
+                <img src="src/strumming gif.GIF" alt="stumming guitar animation" class="img-fluid wow fadeIn">
             </div>
         </div>
     </div>
 
     <!--Music Section-->
-    <div id="music" class="container">
+    <div id="music" class="container scrollspy wow fadeIn">
         <div class="row">
             <div class="col-lg text-center">
                 <h1 class="display-3 header-text">MUSIC</h1>
@@ -64,19 +81,19 @@
             <div class="col-lg">
                 <div class="container-fluid">
                     <div class="row p-2">
-                        <div class="col">
-                            <img src="src/be-mine-pls-cover.jpg" class="img-fluid">
+                        <div class="col hover12">
+                            <img src="src/be-mine-pls-cover.jpg" alt="Be Mine Pls cover art" class="img-fluid">
                         </div>
                         <div class="col">
-                            <img src="src/on-my-mind-cover.jpeg" class="img-fluid">
+                            <img src="src/on-my-mind-cover.jpeg" alt="On My Mind cover art" class="img-fluid">
                         </div>
                     </div>
                     <div class="row p-2">
                         <div class="col">
-                            <img src="src/odds-and-ends-cover.jpg" class="img-fluid">
+                            <img src="src/odds-and-ends-cover.jpg" alt="Odds and Ends cover art" class="img-fluid">
                         </div>
                         <div class="col">
-                            <img src="src/warm-body-cover.jpg" class="img-fluid">
+                            <img src="src/warm-body-cover.jpg" alt="Warm Body" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -89,10 +106,10 @@
     </div>
 
     <!--Videos section-->
-    <div id="videos" class="container mt-5">
+    <div id="videos" class="container scrollspy mt-5 wow fadeIn">
         <div class="row">
             <div class="col text-center">
-                <h1 class="display-3"> VIDEOS </h1>
+                <h1 class="display-3 header-text"> VIDEOS </h1>
             </div>
         </div>
         <div class="row">
@@ -107,10 +124,20 @@
     </div>
 
     <!--Contact Section-->
-    <div id="contact" class="container mt-5">
+    <div id="contact" class="container scrollspy mt-5">
         <div class="row">
             <div class="col text-center">
-                <h1 class="display-3"> CONTACT </h1>
+                <h1 class="display-3 header-text"> CONTACT </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <p><strong>Instagram: </strong> <a href="https://instagram.com/joshmalilay" class="text-secondary">@joshmalilay</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <p><strong>Management: </strong> <a href="mailto:mgmt.joshmalilay@gmail.com" class="text-secondary">mgmt.joshmalilay@gmail.com</a></p>
             </div>
         </div>
     </div>
@@ -136,5 +163,9 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8da4aa3358.js" crossorigin="anonymous"></script>
+    <script src="node_modules/wow.js/dist/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
 </body>
 </html>
