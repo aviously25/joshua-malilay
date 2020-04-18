@@ -5,6 +5,8 @@ $theme-colors:(
     "dark": #2c324c,
 );
 
+$border-radius:10px;
+
 //import needed stuff
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -38,4 +40,8 @@ $theme-colors:(
     position: absolute;
     bottom: 3%;
     right:auto;
+}
+
+i{
+    margin: auto 2rem;
 }
