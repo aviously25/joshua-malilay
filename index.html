@@ -14,25 +14,76 @@
 </head>
 <!--Body-->
 <body class="bg-light">
-    <!--BG Video-->
-    <video autoplay muted class="video-bg rounded">
-        <source src="src/oddsAndEnds.mp4" type="video/mp4">
-    </video>
 
     <!--Nav Bar-->
-    <nav class="navbar">
-        <a class="navbar-brand logo text-dark" href="index.html">
-            <img src="src/Joshua-Malilay-Logo.svg" style="height: 6rem;">
-            <span>JOSH</span>
-            <span>MALILAY</span>
-        </a>
-        <div class="nav" style="margin:auto">
+    <nav class="navbar bg-light fixed-top">
+        <div class="nav" style="margin:auto auto">
             <a class="nav-item mr-3 active nav-link text-dark" href="/" >HOME</a>
-            <a class="nav-item mr-3  nav-link text-dark" href="./html/music.html" >MUSIC</a>
-            <a class="nav-item mr-3  nav-link text-dark" href="./html/videos.html" >VIDEOS</a>
-            <a class="nav-item mr-3 nav-link text-dark" href="./html/contact.html" >CONTACT</a>
+            <a class="nav-item mr-3  nav-link text-dark" href="#music" >MUSIC</a>
+            <a class="nav-item mr-3  nav-link text-dark" href="#videos" >VIDEOS</a>
+            <a class="nav-item mr-3 nav-link text-dark" href="#contact" >CONTACT</a>
         </div>
     </nav>
+    <div class="fixed-top logo" style="max-width: 300px;">
+        <a class="text-dark" href="index.html">
+            <img src="src/Joshua-Malilay-Logo.svg" style="height: 6rem;">
+            <span class="header-text">JOSH</span>
+            <span class="header-text">MALILAY</span>
+        </a>
+    </div>
+
+    <!--BG Video-->
+    <div class="container-fluid vh-100" style="max-width: 80%;">
+        <div style="height: 10%;"></div>
+        <video autoplay muted class="video-bg rounded">
+            <source src="src/oddsAndEnds.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!--Music Section-->
+    <div id="music" class="container">
+        <div class="row">
+            <div class="col-lg text-center">
+                <h1 class="display-3 header-text">MUSIC</h1>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg">
+                <div class="container-fluid">
+                    <div class="row p-2">
+                        <div class="col">
+                            <img src="src/be-mine-pls-cover.jpg" class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <img src="src/on-my-mind-cover.jpeg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row p-2">
+                        <div class="col">
+                            <img src="src/odds-and-ends-cover.jpg" class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <img src="src/be-mine-pls-cover.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col text-center">
+                <h1><span class="song-name text-secondary header-text">Discography</span></h1>
+                <iframe class="mt-4" src="https://open.spotify.com/embed/artist/4fAGiYn9xZsfFEdJMEgCTB" width="80%" height="325" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!--Videos section-->
+    <div id="videos" class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="display-3"> VIDEOS </h1>
+            </div>
+        </div>
+
+    </div>
     
     <!--Icons Links-->
     <div class="container-fluid icons">
