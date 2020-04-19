@@ -79,3 +79,12 @@ span.line_wrap:hover span.line {
     text-decoration-line: line-through !important;
     font-weight: bold;
 }
+
+//Media Queries
+@media (max-width: 991.98px) {
+    button.navbar-toggler{
+        position: absolute;
+        top:30px;
+        right:10%;
+    }
+}
