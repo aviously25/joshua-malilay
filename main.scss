@@ -13,9 +13,9 @@ $border-radius:10px;
 //custom css
 @font-face{
     font-family: 'neoto-serif-italic';
-    src: url(src/fonts/neatoserif-italic-webfont.woff2) format('woff2'), 
-         url(src/fonts/neatoserif-italic-webfont.woff) format('woff'),
-         url(src/fonts/NeatoSerif-Italic.otf) format('otf');
+    src: url(../src/fonts/neatoserif-italic-webfont.woff2) format('woff2'), 
+         url(../src/fonts/neatoserif-italic-webfont.woff) format('woff'),
+         url(../src/fonts/NeatoSerif-Italic.otf) format('otf');
 }
 
 .logo-text{
@@ -55,7 +55,7 @@ i{
 }
 
 .section{
-    margin-top: 30vh;
+    margin-top: 25vh;
 }
 
 .line_wrap {
