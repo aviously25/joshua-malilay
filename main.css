@@ -7819,7 +7819,7 @@ span.line {
   top: 54%;
   width: 0;
   border-top: 3px solid var(--dark);
-  -webkit-transition: width 0.5s ease-in; }
+  transition: width 0.5s ease-in; }
 
 span.line_wrap:hover span.line {
   width: 100%; }
