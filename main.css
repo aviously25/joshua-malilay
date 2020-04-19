@@ -7805,6 +7805,9 @@ i {
 .header-text {
   font-family: 'Barlow', Arial, Helvetica, sans-serif; }
 
+.section {
+  margin-top: 30vh; }
+
 .line_wrap {
   position: relative;
   display: inline-block; }
@@ -7813,7 +7816,7 @@ span.line {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 45%;
+  top: 54%;
   width: 0;
   border-top: 3px solid var(--dark);
   -webkit-transition: width 0.5s ease-in; }
