@@ -7829,11 +7829,6 @@ span.line_wrap:hover span.line {
   font-weight: bold; }
 
 @media (max-width: 991.98px) {
-  button.navbar-toggler {
-    position: absolute;
-    top: 30px;
-    left: 10%; }
-
   .logo {
     background-color: var(--light);
     position: fixed;
