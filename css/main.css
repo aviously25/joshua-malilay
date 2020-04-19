@@ -7832,6 +7832,11 @@ span.line_wrap:hover span.line {
   button.navbar-toggler {
     position: absolute;
     top: 30px;
-    right: 10%; } }
+    left: 10%; }
+
+  .logo {
+    background-color: var(--light);
+    position: fixed;
+    margin-left: 35%; } }
 
 /*# sourceMappingURL=main.css.map */
