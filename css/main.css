@@ -7796,7 +7796,8 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 100%; }
 
 .icons {
-  font-size: 2rem; }
+  font-size: 2vw;
+  margin-bottom: 3vw; }
 
 .icons-header {
   position: relative;
