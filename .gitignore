@@ -1,3 +1,4 @@
 node_modules
 wow.js
 .sass-cache
+.DS_store
