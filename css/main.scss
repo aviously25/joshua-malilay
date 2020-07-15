@@ -30,7 +30,7 @@ $border-radius:10px;
 }
 
 .nav-item{
-    font-family: Barlow, Arial, Helvetica, sans-serif;
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
     font-size: 2rem;
 }
 
@@ -85,6 +85,10 @@ span.line_wrap:hover span.line {
 .active span{
     text-decoration-line: line-through !important;
     font-weight: bold;
+}
+
+.footer{
+    font-family: 'Barlow', Arial, Helvetica, sans-serif;
 }
 
 //Media Queries
