@@ -55,10 +55,10 @@
     <!--BG Video-->
     <div id="home" class="container-fluid vh-100 scrollspy" style="max-width: 80%;">
         <div style="height: 13%;"></div>
-        <video autoplay disableRemotePlayback preload="auto" muted playsinline class="video-bg rounded">
+        <video autoplay disableRemotePlayback preload="auto" muted playsinline class="video-bg rounded" id="video-bg">
             <source src="src/home.mp4" type="video/mp4">
         </video>
-        <div class="d-none d-lg-block icons-header text-center animated fadeIn">
+        <div class="d-none d-lg-none icons-header text-center " id="icons-header">
             <a href="https://open.spotify.com/artist/4fAGiYn9xZsfFEdJMEgCTB">
                 <i class="fab fa-spotify text-light mr-3"></i>
             </a>
@@ -202,10 +202,10 @@
 
     <!--Footer Section-->
     <div class="container-fluid footer">
-        <div class="pt-4 pb-4 text-center">
-            All Rights Reserved to Joshua Malilay <br/>
+        <footer class="pt-4 pb-4 text-center">
+            &copy; Copyright 2020, Joshua Malilay.<br/>
             Designed and Developed by: Avi Udash and Rachael Nguyen
-        </div>
+        </footer>
     </div>
 
     <!--Javascript includes-->
@@ -214,8 +214,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8da4aa3358.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script>
-            new WOW().init();
-        </script>
+    <script>
+        new WOW().init();
+
+        document.getElementById("video-bg").addEventListener('ended', iconsAnimate, false)
+
+        function iconsAnimate(e){
+            document.getElementById("icons-header").classList.add("animated")
+            document.getElementById("icons-header").classList.add("fadeIn")
+            document.getElementById("icons-header").classList.add("d-lg-block")
+        }
+    </script>
 </body>
 </html>
